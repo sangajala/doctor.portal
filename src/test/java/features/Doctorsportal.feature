@@ -6,7 +6,7 @@ Feature:End to end verification of doctors portal
     Then doctor is directed to "<dashboard>"
     Examples:
       |email        |password  |dashboard |
-      |lgp@test.com |Qwe@12345 |Dashboard |
+      |lgp@test.com |Qwe@1234 |Dashboard |
 
 
   Scenario:Verify doctor can view Archive
@@ -112,7 +112,7 @@ Feature:End to end verification of doctors portal
     And    Doctor submit
     Examples:
       |current password |new password |re enter new password|
-      |Qwe@12345        |Qwe@1234     |Qwe@1234             |
+      |Qwe@1234         |Qwe@12345     |Qwe@12345             |
 
 
 
