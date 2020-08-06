@@ -16,8 +16,8 @@ public class BrowserFactory {
 
     private static final int MAX_TIMEOUT = 30;
 
-    public static String USERNAME = "sreelakshmi16";
-    public static String AUTOMATE_KEY = "VSC8Z8jsEug8LEzPgHA1";
+    public static String USERNAME = "rohini51";
+    public static String AUTOMATE_KEY = "7tYqduB9ruwBbWYTW8AJ";
  
     public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 

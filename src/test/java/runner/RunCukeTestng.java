@@ -17,10 +17,10 @@ import utils.utilities;
 
 @CucumberOptions(
 
-        features = {"src/test/java/features/UserAccounts.feature"},
+        features = {"src/test/java/features/Doctorsportal.feature"},
         glue = {"stepDefinitions"},
         monochrome = true,
-        tags = {"@login"},
+        //tags = {"@login"},
         plugin = {"pretty", "html:target/cucumber", "com.cucumber.listener.ExtentCucumberFormatter", "json:target/cucumber.json"}
         //plugin = {"pretty","html:target/cucumber","com.cucumber.listener.ExtentCucumberFormatter:target/cucumber/report.html"}
 
