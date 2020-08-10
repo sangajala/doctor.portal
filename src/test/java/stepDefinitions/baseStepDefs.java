@@ -27,6 +27,7 @@ public class baseStepDefs {
     public ExistingAppointments existingappointments;
     public membershipEnrollment membershipenrollment;
     public allNotificationsPage allnotificationspage;
+
     public doctorspage doctorsPage;
 
 
