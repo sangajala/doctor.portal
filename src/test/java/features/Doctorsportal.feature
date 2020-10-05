@@ -1,4 +1,4 @@
-Feature:End to end verification of doctors portal
+Feature:End to end verification of doctors portal - Rumana
 
   Scenario Outline:Verify doctor can login with valid credentials
     Given doctor has launched url
@@ -126,6 +126,9 @@ Feature:End to end verification of doctors portal
       |lg@test.com  |qwe@12    |Oops! You have entered invalid credentials|
       |lg@test.com  |Qwe@12345 |Oops! You have entered invalid credentials|
       |lgp@test.com |qwe@1     |Oops! You have entered invalid credentials|
+
+
+
 
 
 

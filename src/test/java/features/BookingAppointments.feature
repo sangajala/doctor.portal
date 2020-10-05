@@ -1,4 +1,4 @@
-Feature: Booking Appointment from admin portal
+Feature: Booking Appointment from admin portal - > Swapna (Appointment from admin point of view)
 
   In Order to book Appointment for registered patient
   As a admin
@@ -147,6 +147,8 @@ Feature: Booking Appointment from admin portal
       | date   | site         | Time                     | patient     | AppointmentType    | DoctorName  | comments                 |
       | TE day | In Hours     | with in 2hr from TE time | James Woods | Health Screen      | Dr. Lakshmi | Hi Doctor, This is James |
       | TE day | Out of Hours | with in 2hr from TE time | James Woods | Video Consultation | Dr. Lakshmi | Hi Doctor, This is James |
+
+
       #TE = Test Execution
       #TE day = Test Execution day
   Scenario Outline: Verify Admin can not book appointment for past time or past day
