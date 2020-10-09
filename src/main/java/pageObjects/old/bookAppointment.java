@@ -77,7 +77,6 @@ public class bookAppointment extends basePage {
     WebElement nextBtn;
 
 
-
     //Getters for  Page objects
     public WebElement getBookingCompleteMsg() {
         return bookingCompleteMsg;
@@ -90,8 +89,12 @@ public class bookAppointment extends basePage {
     public WebElement getApptmtDetMsg() {
         return apptmtDetMsg;
     }
+
     /////
-    public WebElement getServiceMessage(){ return serviceMessage; }
+    public WebElement getServiceMessage() {
+        return serviceMessage;
+    }
+
     //
     public WebElement getApptmtFiltersMsg() {
         return apptmtFiltersMsg;
@@ -135,32 +138,34 @@ public class bookAppointment extends basePage {
     }
 
     public void choosePayerType(String pType) {
-        String toPass = "//li[contains(text(),'"+pType+"')]";
+        String toPass = "//li[contains(text(),'" + pType + "')]";
         payerType = driver.findElement(By.xpath(toPass));
         utils.clickOnWebElement(driver, payerType);
     }
 
     public WebElement choosePayerType2(String pType) {
 
-        String toPass = "//li[contains(text(),'"+pType+"')]";
+        String toPass = "//li[contains(text(),'" + pType + "')]";
         return driver.findElement(By.xpath(toPass));
 
     }
 
-    public  void chooseServiceType(String sType)  {
-        String toPass = "//li[contains(text(),'"+sType+"')]";
-        serviceType= driver.findElement(By.xpath(toPass));
+    public void chooseServiceType(String sType) {
+        String toPass = "//li[contains(text(),'" + sType + "')]";
+        serviceType = driver.findElement(By.xpath(toPass));
         utils.clickOnWebElement(driver, serviceType);
 
     }
 
-    public void selectsrcivecfronServicetype(String selcetserType){
-        selectservicesType= driver.findElement(By.xpath("//li[contains(text(),'"+selcetserType+"')]"));
+    public void selectsrcivecfronServicetype(String selcetserType) {
+        selectservicesType = driver.findElement(By.xpath("//li[contains(text(),'" + selcetserType + "')]"));
+
         try {
             utils.waitToLoad();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+
         utils.clickOnWebElement(driver, selectservicesType);
 
         nextBtn.click();
@@ -254,9 +259,6 @@ public class bookAppointment extends basePage {
 
 
     }
-
-
-
 
 
 }

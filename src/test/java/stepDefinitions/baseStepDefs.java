@@ -27,8 +27,8 @@ public class baseStepDefs {
     public ExistingAppointments existingappointments;
     public membershipEnrollment membershipenrollment;
     public allNotificationsPage allnotificationspage;
-
     public doctorspage doctorsPage;
+    public AddDoctorPage addDoctorPage;
 
 
     public baseStepDefs() {
@@ -48,7 +48,8 @@ public class baseStepDefs {
         appointmentdetails = new AppointmentDetails();
         membershipenrollment = new membershipEnrollment();
         allnotificationspage = new allNotificationsPage();
-        doctorsPage = new doctorspage();
+        addDoctorPage = new AddDoctorPage();
+//        doctorsPage = new doctorspage();
     }
 
 }

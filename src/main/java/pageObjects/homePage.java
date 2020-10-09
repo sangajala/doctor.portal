@@ -187,4 +187,8 @@ public class homePage extends basePage {
     public void logout() {
        driver.get(prop.getProperty("url")+"/logout");
     }
+
+    public void clickOnMenu(String menu) {
+        driver.findElement(By.xpath("//span[text()='"+menu+"']")).click();
+    }
 }
